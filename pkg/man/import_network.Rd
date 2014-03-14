@@ -5,7 +5,7 @@
 Import network data for CandidateBacon package
 }
 \description{
-Function used it import network interaction data and extract relavent pairwise interactions. 
+An R data frame containing the network data is created from a file with at least two columns, i.e. all the pair wise interactions of the nodes in the network. The user specifies the two relevant columns and the information is extracted from the file. 
 }
 \usage{
 import_network(infile, columns = c(1, 2))
@@ -20,7 +20,7 @@ columns in the file with pairwise interactions
 }
 }
 \details{
-The data is extracted from the indicated columns where each line indicates a pairwise interaction between two nodes. The data is formatted, and a matrix with the all interactions for each node is produced. Summary of the network features is provided. 
+A tab-delimited text file with the interactions is used as input. The data is extracted from the indicated columns where each line indicates a pairwise interaction between two nodes (Note: all other information in the file will be excluded and only the columns indicated will be used to construct the network). The data is formatted, and a matrix with the all interactions for each node is produced. Summary of the network features is provided.
 }
 \value{
 A matrix representing the network.

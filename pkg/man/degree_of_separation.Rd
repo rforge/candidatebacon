@@ -20,7 +20,7 @@ Nummber of repeated sampling of two random node paths
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+To find the average connectedness of any two random nodes in a network the function degree_of_separation is used. The search algorithm is repeated multiple times (by default 100 times, but customizable by the user) for randomly selected node pairs in the network. A vector is returned, where each element is the degree of separation for a single iteration. The return vector can then be used to generate the network-specific distribution of connectedness.
 }
 \value{
 A vector with the pathlength of each sampling event. 

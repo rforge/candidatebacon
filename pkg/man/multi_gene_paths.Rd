@@ -20,7 +20,7 @@ A two column matrix with all the pairwise interactions that need to be evaluated
 }
 }
 \details{
-The mean degree of separation for all the pairs as well as the number of unconected pairs are summerised. A vector of the pathlength for each interacting pair is returned. 
+This function allows the user to calculate the average DoS for multiple node pairs. The required input parameter is a list of interacting pairs and the search algorithm is applied to each pair. The average DoS for the set is returned.
 }
 \value{
 A vector with the number of connections between each pair is returned. 
